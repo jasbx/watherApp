@@ -13,7 +13,7 @@
 
         <div class="search">
             <input class="searchBox" type="text" placeholder="enter city name...">
-            <button class="button"><img src="/images/search.png" alt=""></button>
+            <button class="button"><img src="images/search.png" alt=""></button>
 
         </div>
         <div class="weather">
@@ -22,14 +22,14 @@
             <h2 class="city">London</h2>
             <div class="detales">
                 <div class="col">
-                    <img src="/images/humidity.png" alt="">
+                    <img src="images/humidity.png" alt="">
                     <div>
                         <p class="humidity">50%</p>
                         <p>humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="/images/wind.png" alt="">
+                    <img src="images/wind.png" alt="">
                     <div>
                         <p class="wind">15km</p>
                         <p>wind spped</p>
@@ -53,9 +53,9 @@
 
             document.querySelector(".weatherIcon").setAttribute("src", "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png");
             if (data.weather[0].main == 'Clouds') {
-                document.querySelector(".weatherIcon").setAttribute("src", "/images/cloud.png");
+                document.querySelector(".weatherIcon").setAttribute("src", "images/cloud.png");
             } else if (data.weather[0].main == 'Clear') {
-                document.querySelector(".weatherIcon").setAttribute("src", "/images/clear.png");
+                document.querySelector(".weatherIcon").setAttribute("src", "images/clear.png");
             }
 
 
